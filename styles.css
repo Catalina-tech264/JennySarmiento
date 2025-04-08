@@ -45,7 +45,7 @@ header {
 .menu-nav{
     background-color: rgb(255, 255, 255);
     width: 90%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 20px auto;
     border-radius: 15px;
     box-shadow: 0 0 15px rgb(64, 65, 66);
@@ -57,11 +57,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    
+    position: relative; 
 }
 .logo{
-    width: 250px;
+    width: 150px;
 }
 .menu .navbar ul li{
     position: relative;
@@ -70,7 +69,7 @@ header {
 .menu .navbar ul li a{
     color:rgb(188, 154, 94);
     font-size: 24px;
-    padding: 10px 15px;
+    padding: 10px 25px;
     display: block;
 }
 .menu .navbar ul li a:hover{
@@ -104,7 +103,7 @@ header {
     display: none;
 }
 /* --- Responsividad --- */
-@media(max-width:768px) {
+@media(max-width:740px) {
     .menu{
         padding: 20px;
     }
@@ -149,7 +148,7 @@ header {
     color: #ffffff;
     width: 80%;
     text-align: center;
-    padding: 15% 10% 5% 10%;
+    padding: 15% 10% 10% 10%;
  }
  .wrap-texto h1{
     font-family: 'Mangro', sans-serif;
@@ -200,7 +199,7 @@ header {
     margin-top: 40px;
   }
   .item {
-    width: 300px;
+    width: 450px;
     position: relative;
   }
   .imagen {
