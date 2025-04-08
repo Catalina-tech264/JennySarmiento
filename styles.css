@@ -30,7 +30,7 @@ body{
     scroll-behavior: smooth;
     }
 .container{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 /* --- Encabezado --- */
@@ -103,7 +103,7 @@ header {
     display: none;
 }
 /* --- Responsividad --- */
-@media(max-width:740px) {
+@media(max-width:800px) {
     .menu{
         padding: 20px;
     }
