@@ -91,7 +91,7 @@
     </div>
   </div>
 </section>
-<!-- sobre mi -->
+<!-- Trayectoria -->
 <section class="sobre-mi">
   <div class="wrapper">
     <div class="img2">
@@ -108,7 +108,7 @@
     </div>
   </div>
 </section>
-<!-- testimonios 1-->
+<!-- testimonios -->
 <section class="testimonios">
   <h2>Lo que dicen nuestros clientes</h2>
   <hr class="linea-elegante">
@@ -116,8 +116,10 @@
     y los resultados naturales.</p>
   <div class="carousel-container">
     <div class="carousel-track">
+<!-- testimonio 1 -->        
       <div class="testimonio">
         <img src="Img/avatar1.jpg" alt="Juan P">
+          <div class="contenido-texto">
         <blockquote>
           “Había probado muchos tratamientos para mejorar la calidad de mi piel, pero no obtenía los
            resultados que buscaba. Con la armonización facial, mi rostro luce más fresco y equilibrado 
@@ -126,9 +128,11 @@
         <p class="nombre">Juan P</p>
         <p class="edad">41 años</p>
       </div>
-<!-- testimonios 2-->
+     </div>
+<!-- testimonio 2-->
       <div class="testimonio">
         <img src="Img/avatar2.jpg" alt="Laura R">
+          <div class="contenido-texto">
         <blockquote>
           “Siempre fui insegura con mis cejas, pero después de la micropigmentación con la Dra. Jenny,
            mi rostro se ve más expresivo y definido. Es la mejor decisión que he tomado.”
@@ -136,9 +140,11 @@
         <p class="nombre">Laura R</p>
         <p class="edad">58 años</p>
       </div>
-<!-- testimonios 3-->
+      </div>
+<!-- testimonio 3-->
       <div class="testimonio">
         <img src="Img/avatar3.jpg" alt="Carla M">
+          <div class="contenido-texto">
         <blockquote>
           “Me encantó el trato personalizado. Me explicaron todo con detalle y el resultado fue increíble.
            Me siento más segura de mí misma.”
@@ -146,58 +152,89 @@
         <p class="nombre">Carla M</p>
         <p class="edad">36 años</p>
       </div>
+     </div>
     </div>
-  </div>
+   </div>
 <!-- Botones abajo -->
   <div class="carousel-controls">
     <button class="btn-prev"><</button>
     <button class="btn-next">></button>
   </div>
 </section>
-<!-- form -->
-<div class="container">
-    <div class="form-container">
-      <h2>Agenda tu cita</h2>
-      <p>Nos contactaremos lo más pronto posible</p>
-      <form action="forms.php" method="POST">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required />
+<!-----form ------>
+    <div class="contact-wrapper">
+  <div class="form-container">
+    <h2>Agenda tu cita</h2>
+    <p>Nos contactaremos lo más pronto posible</p>
+    <form action="forms.php" method="POST">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required />
 
-        <label for="correo">Correo</label>
-        <input type="email" id="correo" name="correo" required />
+      <label for="correo">Correo</label>
+      <input type="email" id="correo" name="correo" required />
 
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-        <div class="checkbox">
-          <input type="checkbox" id="terminos" name="terminos" required />
-          <label for="terminos">
-            Aceptar términos y condiciones
-            <a href="#" target="_blank">T&Cs</a>
-          </label>
-        </div>
-
-        <button type="submit">Enviar información</button>
-      </form>
+      <div class="checkbox">
+        <input type="checkbox" id="terminos" name="terminos" required />
+        <label for="terminos">
+          Aceptar términos y condiciones
+          <a href="#" target="_blank">T&Cs</a>
+        </label>
+      </div>
+      <button type="submit">Enviar información</button>
+    </form>
+  </div>
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.418204277081!2d-74.04243187502067!3d4.697177545277824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab093c96367%3A0x75a977635ce6b120!2sStemwell%20Health%20-%20Regenerative%20Medicine!5e0!3m2!1ses!2sco!4v1744982834511!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
+<!----- footer ----->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column logo">
+      <img src="img/logo2.png" alt="Logo2 Jenny " />
+      <div class="social-icons">
+        <a href="https://api.whatsapp.com/send/?phone=3189004216&text&type=phone_number&app_absent=0"><img src="img/icono2.png" alt="WhatsApp" /></a>
+        <a href="https://www.instagram.com/drajennysarmiento_/#"><img src="img/icono3.png" alt="Instagram" /></a>
+        <a href="https://web.facebook.com/jenny.a.sarmiento.9?_rdc=1&_rdr#"><img src="img/icono4.png" alt="Facebook" /></a>
+        <a href="https://www.tiktok.com/@drajennysarmiento"><img src="img/icono5.png" alt="TikTok" /></a>
+      </div>
     </div>
-
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.663177307184!2d-74.0523544250244!3d4.693035741662996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a60b25f7c09%3A0xa24e36a7b4e27e37!2sCaf%C3%A9%20Niebla%20116!5e0!3m2!1ses!2sco!4v1713112123456"
-        width="100%"
-        height="100%"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+    <div class="footer-column">
+      <h3>Menú</h3>
+      <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="html/trayectoria.html">Trayectoria</a></li>
+        <li><a href="html/Contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Información</h3>
+      <ul>
+        <li><a href="html/tyc.html">Términos y condiciones</a></li>
+        <li><a href="html/privacidad.html">Privacidad</a></li>
+        <li><a href="html/faqs.html">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contacto</h3>
+      <p>+57 3189004216</p>
+      <p>majemi243108@gmail.com</p>
+      <p>Stemwell Health – Regenerative Medicine, Kr 13 #118–08, Bogotá</p>
     </div>
   </div>
-
-<footer>
-    <p>&copy; 2025 Dra. Jenny Sarmiento - Todos los derechos reservados.</p>
+  <div class="footer-copy">
+    <p>© 2025 Dra. Jenny Sarmiento - Todos Los Derechos Reservados.</p>
+  </div>
 </footer>
-
 <script src="js/main.js"></script>
 </body>
 </html>
