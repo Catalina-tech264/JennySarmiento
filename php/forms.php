@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if (mail($to, $subject, $body, $headers)) {
         
-        header("Location: gracias.html");
+        header("Location:html/gracias.html");
         exit;
     } else {
         echo "Hubo un problema al enviar tu mensaje. Intenta nuevamente más tarde.";
