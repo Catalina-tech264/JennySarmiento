@@ -1,0 +1,60 @@
+.servicios {
+  background-color: #d8d7d5;
+  padding: 100px 40px;
+  position: relative;
+  background-image: url('Img/Fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+}
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+}
+.imagen {
+  flex: 1;
+  min-width: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.imagen img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+.caja-texto{
+  flex: 2;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.92); 
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.caja-texto h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #BC9A5E;
+  font-weight: 500;
+  font-family: 'Mangro', serif;
+}
+.caja-texto p {
+  line-height: 1.5;
+  color: #5a4a35;
+}
+.intro {
+  font-size: 17px;
+  margin-bottom: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  color: #5a4a35;
+}
