@@ -40,7 +40,7 @@
 
 .accordion-item {
   background: #fff;
-  border-radius: 12px;
+  border-radius: 0 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   overflow: hidden;
   transition: all 0.3s ease;
