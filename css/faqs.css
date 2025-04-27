@@ -1,4 +1,4 @@
-/* -------------------- FAQ SECTION -------------------- */
+* -------------------- FAQ SECTION -------------------- */
 .faq {
   padding: 80px 20px;
   background-color: #fff9f2;
@@ -27,7 +27,6 @@
 }
 
 .intro {
-  font-size: 17px;
   text-align: center;
   color: #5a4a35;
   margin-bottom: 40px;
@@ -49,21 +48,20 @@
 }
 
 .accordion-header {
-  width: 100%;
+  cursor: pointer;
   padding: 1.5rem;
-  background: white;
-  border: none;
-  text-align: left;
   font-size: 1.1rem;
   font-weight: 500;
   color: #294661;
-  cursor: pointer;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  outline: none;
+  list-style: none;
 }
 
 .accordion-header .icon {
+  margin-left: 12px;
   font-size: 24px;
   background-color: #BC9A5E;
   color: white;
@@ -73,23 +71,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s, background 0.3s;
+  user-select: none;
 }
 
-.accordion-content {
-  padding: 0 1.5rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  color: #5a4a35;
-  line-height: 1.5;
-  font-size: 16px;
-}
-
-.accordion-header[aria-expanded="true"] .icon {
+.accordion-item[open] .icon {
   transform: rotate(45deg);
   background-color: #294661;
 }
 
+.accordion-content {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  color: #5a4a35;
+  line-height: 1.5;
+  font-size: 16px;
+  animation: fadeIn 0.3s;
+}
 .accordion-header[aria-expanded="true"] + .accordion-content {
   padding: 1rem 1.5rem 1.5rem;
   max-height: 400px;
