@@ -249,6 +249,7 @@ img {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  align-items: flex-start;
 }
 .item {
   width: 300px;
@@ -275,6 +276,13 @@ img {
   font-size: 15px;
   color: #3a2e1c;
   line-height: 1.2;
+}
+.galeria .item:nth-child(2) {
+  margin-top: 40px;
+}
+.galeria .item:nth-child(1),
+.galeria .item:nth-child(3) {
+  margin-top: 0;
 }
 /* -------------------- trayectoria -------------------- */
 .sobre-mi {
