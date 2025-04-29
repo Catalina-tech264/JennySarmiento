@@ -36,8 +36,8 @@ img {
   top: 0;
   z-index: 1100;
 }
-.logo {
-  width: 150px;
+.logo img {
+  width: 150px !important;
 }
 /* - MENÚ HAMBURGUESA - */
 #menu-toggle {
