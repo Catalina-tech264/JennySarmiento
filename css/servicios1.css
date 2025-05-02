@@ -154,13 +154,13 @@
 .card-num {
   font-size: 30px;
   font-family: 'Mangro', sans-serif;
-  color: #BC9A5E;
+  color: #73541D;
   font-weight: 800;
   position: absolute;
   top: 22px;
   left: 28px;
   z-index: 1;
-  opacity: 0.70;
+  opacity: 0.90;
   letter-spacing: -2px;
   pointer-events: none;
 }
