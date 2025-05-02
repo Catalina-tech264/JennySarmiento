@@ -152,7 +152,7 @@
   max-width: 100%;
 }
 .card-num {
-  font-size: 30px;
+  font-size: 60px;
   font-family: 'Mangro', sans-serif;
   color: #BC9A5E;
   font-weight: 900;
@@ -160,7 +160,7 @@
   top: 22px;
   left: 28px;
   z-index: 1;
-  opacity: 0.20;
+  opacity: 0.50;
   letter-spacing: -2px;
   pointer-events: none;
 }
