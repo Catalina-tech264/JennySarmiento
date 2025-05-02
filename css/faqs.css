@@ -30,6 +30,7 @@
   color: #5a4a35;
   margin-bottom: 40px;
   line-height: 1.5;
+  
 }
 
 .accordion {
@@ -48,10 +49,11 @@
 
 .accordion-header {
   cursor: pointer;
-  padding: 1.5rem;
-  font-size: 1.1rem;
+  padding: 15px;
+  font-size: 18px;
   font-weight: 500;
-  color: #294661;
+  color:  #5a4a35;
+  font-family: 'Proda Sans', sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,27 +64,35 @@
 .accordion-header .icon {
   margin-left: 12px;
   font-size: 24px;
-  background-color: #BC9A5E;
-  color: white;
+  background: none;
+  color: #BC9A5E;
   width: 32px;
   height: 32px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s, background 0.3s;
+  transition: transform 0.3s, color 0.3s;
   user-select: none;
 }
 
 .accordion-item[open] .icon {
   transform: rotate(45deg);
-  background-color: #294661;
+  color: #294661;
+  background: none;
 }
 
 .accordion-content {
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0 24px 24px 24px;
   color: #5a4a35;
   line-height: 1.5;
   font-size: 16px;
   animation: fadeIn 0.3s;
+}
+
+.cta-bar {
+  margin-bottom: 48px;
+}
+
+.footer {
+  margin-top: 48px;
 }
