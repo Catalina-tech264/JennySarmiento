@@ -1,51 +1,95 @@
-.trayectoria {
-  background-color: #d8d7d5;
-  padding: 100px 40px;
-  position: relative;
-  background-image: url('Img/Fondo.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-blend-mode: soft-light;
-}
-.contenedor {
+/* Hero*/
+.hero-dermatologa {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-  max-width: 1100px;
-  margin: auto;
-  z-index: 2;
+  justify-content: center;
+  padding: 60px 0 40px 0;
+  min-height: 420px;
   position: relative;
-}
-.imagen {
-  flex: 1;
-  min-width: 280px;
-  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background:linear-gradient(to bottom, rgba(149, 149, 149, .10),rgba(0, 0, 0, .10)), url('../Img/fondo3.png') center/cover no-repeat;
+  border-radius: 0 0 50px 50px;
 }
-.imagen img {
-  width: 100%;
-  display: block;
-  border-radius: 20px;
+.hero-content {
+  flex: 1 1 340px;
+  max-width: 520px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
-.caja-texto{
-  flex: 2;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.92); 
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-.caja-texto h2 {
-  margin-bottom: 20px;
-  font-size: 32px;
-  color: #BC9A5E;
+.hero-title {
+  font-family: 'Mangro', sans-serif;
+  font-size: 60px;
+  color:#BC9A5E;
+  margin-bottom: 8px;
   font-weight: 500;
-  font-family: 'Mangro', serif;
 }
-.caja-texto p {
-  line-height: 1.5;
-  color: #5a4a35;
+.hero-subtitle {
+  font-size: 24px;
+  color:#5a4a35;
+  font-family: 'Proda sans', sans-serif;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+.hero-text {
+  margin-bottom: 24px;
+  font-style: italic;
+  text-align: right;
+  font-family: 'Proda sans', sans-serif;
+  font-weight: 50;
+  font-size: 20px;
+  color:#BC9A5E;
+}
+.hero-btn {
+  margin-top:40px;
+  position: relative;
+  display: inline-block;
+  padding: 14px 32px;
+  color:  #5a4a35;
+  background: transparent;
+  border: 2px solid  #BC9A5E;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius:0 15px;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+  letter-spacing: 0.5px;
+}
+.hero-btn:hover {
+  color: white;
+}
+.hero-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20%;
+  right: -20%;
+  bottom: 0;
+  background:  #BC9A5E;
+  z-index: -1;
+  transform: skewX(-45deg) scaleX(0);
+  transition: transform 0.4s ease;
+  transform-origin: left;
+}
+.hero-btn:hover::after {
+  transform: skewX(-45deg) scaleX(1);
+}
+.hero-img {
+  flex: 1 1 340px;
+  max-width: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+.hero-img video {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 0 22px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.30);
 }
