@@ -525,17 +525,39 @@ form .checkbox input {
   margin-right: 8px;
 }
 form button {
-  background-color: #BC9A5E;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
+  margin-top:25px;
+  position: relative;
+  display: inline-block;
+  padding: 14px 32px;
+  color: #BC9A5E;
+  background: transparent;
+  border: 2px solid  #BC9A5E;
   font-weight: bold;
+  font-size: 18px;
+  border-radius:0 15px;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+  letter-spacing: 0.5px;
 }
 form button:hover {
-  background-color: #a8874d;
+  color: #fff;;
+}
+form button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20%;
+  right: -20%;
+  bottom: 0;
+  background:#BC9A5E;
+  z-index: -1;
+  transform: skewX(-45deg) scaleX(0);
+  transition: transform 0.4s ease;
+  transform-origin: left;
+}
+form button:hover::after {
+  transform: skewX(-45deg) scaleX(1);
 }
 .checkbox a {
   color: #BC9A5E; 
