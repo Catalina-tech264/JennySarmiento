@@ -93,3 +93,156 @@
   border-radius: 0 22px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.30);
 }
+
+.galeria {
+  padding: 30px;
+}
+.galeria-titulo {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #bca25e;
+  font-family: 'Mangro', serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.galeria-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 64px;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: flex-start;
+}
+.galeria-tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 290px;
+  position: relative;
+  overflow: visible;
+  margin: 0 auto 32px auto;
+}
+.galeria-img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow:  0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.galeria-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.6s cubic-bezier(.4,1.3,.3,1);
+  display: block;
+}
+.galeria-img:hover img {
+  transform: scale(1.07);
+}
+.galeria-desc {
+  background: #fff;
+  border-radius:  0 20px;
+  box-shadow:  0 4px 12px rgba(0,0,0,0.08);
+  padding: 28px 18px 18px 18px;
+  text-align: center;
+  width: 80%;
+  margin: -40px auto 0 auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.galeria-tarjeta:nth-child(2){
+  margin-top: -38px;
+}
+.galeria-tarjeta:nth-child(1),
+.galeria-tarjeta:nth-child(3){
+  margin-top: 28px;
+}
+.galeria-desc h4 {
+  color: #73541D;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.galeria-desc p {
+  color:#3a2e1c;
+  line-height: 1.2;
+  font-size: 15px;
+}
+/* Animaciones */
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out 0.2s forwards;
+}
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.1s ease-out 0.4s forwards;
+}
+.animate-slide-in {
+  opacity: 0;
+  transform: translateX(60px);
+  animation: slideIn 1.1s ease-out 0.5s forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .hero-dermatologa {
+    flex-direction: column-reverse;
+    padding: 40px 0 20px 0;
+  }
+  .hero-content, .hero-img {
+    max-width: 100%;
+    padding: 8px 10px;
+    align-items: center;
+  }
+  .hero-img video {
+    max-width: 240px;
+  }
+  .galeria-lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .galeria-tarjeta {
+    width: 98vw;
+    max-width: 350px;
+    border-radius: 14px;
+  }
+  .galeria-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+  }
+  .galeria-desc {
+    width: 98%;
+    max-width: 99%;
+    border-radius: 10px;
+    margin: -28px auto 0 auto;
+    padding: 18px 8px 12px 8px;
+  }
+}
